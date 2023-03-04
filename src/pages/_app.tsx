@@ -6,8 +6,8 @@ import { trpc } from '@/client/utils/trpc'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Component {...pageProps}></Component>
-      <ReactQueryDevtools initialIsOpen={false}></ReactQueryDevtools>
+      <Component {...pageProps}/>
+      <ReactQueryDevtools initialIsOpen={false}/>
     </>
   )
 }
