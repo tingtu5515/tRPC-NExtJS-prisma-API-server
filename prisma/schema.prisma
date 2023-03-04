@@ -10,9 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model User{
   @@map(name: "users")
 
-  id String @id @default(uuid())
-  name String @db.Varchar(255)
+  id String  @id @default(uuid())
+  name String  @db.VarChar(255)
 }
